@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System.Diagnostics;
 using WebApplicationTestBranches.Models;
 
 namespace WebApplicationTestBranches.Controllers
@@ -18,15 +14,18 @@ namespace WebApplicationTestBranches.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+
+        public IActionResult Index1()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Index2()
         {
             return View();
         }
+
+        
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
